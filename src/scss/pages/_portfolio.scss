@@ -1,0 +1,61 @@
+/* Portfolio
+=============== */
+
+.portfolio-page {
+	.cell {
+		padding: 0;
+		h1 {
+			margin-top: 0;
+		}
+		p {
+			margin-bottom: 0;
+		}
+	}
+	.portfolio-thumbnail {
+		img,
+		a {
+			display: block;
+		}
+	}
+	.portfolio-description {
+		padding: 1rem;
+		border-top: 1px solid $border;
+	}
+}
+
+@include small-breakpoint {
+	.portfolio-page .portfolio-description {
+		padding: 2rem;
+	}
+}
+
+.cell.port {
+	display: block;
+	width: 100%;
+	p {
+		display: block;
+	} 
+}
+
+@include small-breakpoint {
+	.cell.port {
+		display: block;
+		width: calc(50% - 1rem);
+	}
+}
+
+@include nav-breakpoint {
+	.cell.port {
+		width: calc(33.3333% - 1rem);
+	}
+}
+
+#projects {
+	padding: 3rem 0;
+	h1 {
+		font-size: 1.4rem;
+	}
+	p {
+		color: $light-font;
+	}
+}
